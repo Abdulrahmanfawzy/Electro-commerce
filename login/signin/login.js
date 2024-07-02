@@ -52,7 +52,7 @@ function checkLoginFun(e) {
           "userObj",
           JSON.stringify({ id: x.id, username: x.username })
         );
-        window.location.href = "/Electro-commerce/index.html";
+        window.location.href = "index.html";
       })
       .catch((error) => {
         const errorCode = error.code;
