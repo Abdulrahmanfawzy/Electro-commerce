@@ -35,7 +35,7 @@ function checkLoginFun(e) {
         
         async function getData() {
           return new Promise((resolve, reject) => {
-            const starCountRef = ref(db, "users/" + user.uid);
+            const starCountRef = ref(db, "users/" + userCredential.user.uid);
             onValue(starCountRef, async (snapshot) => {
               const data = await snapshot.val();
               let newObject = {
