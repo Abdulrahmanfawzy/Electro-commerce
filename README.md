@@ -5,11 +5,11 @@ Electro store is a huge store built using HTML, CSS, Javascript, Ajax, bootstrap
 
 This store contains many features like:
 
-Registration system (Register, Login and Logout)
-Account for each user to update his username or password
-Add to cart feature
-Add to Wishlist feature and here you can add product to cart direct
-Search any products
-There are many filters for products in each page of Electro store like filter using (Brand Names , Colors of products and Price of products)
-Electro contains admin dashboard for adding products for each page
-Admin can make CRUD operation on products.
+<li>Registration system (Register, Login and Logout)</li>
+<li>Account for each user to update his username or password</li>
+<li>Add to cart feature</li>
+<li>Add to Wishlist feature and here you can add product to cart direct</li>
+<li>Search any products</li>
+<li>There are many filters for products in each page of Electro store like filter using (Brand Names , Colors of products and Price of products)</li>
+<li>Electro contains admin dashboard for adding products for each page</li>
+<li>Admin can make CRUD operation on products.</li>
