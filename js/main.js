@@ -69,7 +69,7 @@ function searchFun(inptVal) {
   if (window.location.href.includes("index.html")) {
     window.location.href = `search/search.html${url.search}`;
   } else {
-    window.location.href = `../search/search.html${url.search}`;
+    window.location.href = `../Electro-commerce/search/search.html${url.search}`;
   }
 }
 
@@ -87,7 +87,7 @@ function icon_closeFun(e) {
 function logout() {
   window.localStorage.removeItem("userObj");
   window.localStorage.removeItem("cartNum");
-  window.location.href = "../login/signin/login.html";
+  window.location.href = "../Electro-commerce/login/signin/login.html";
 }
 
 // third section
