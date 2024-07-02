@@ -87,7 +87,7 @@ function icon_closeFun(e) {
 function logout() {
   window.localStorage.removeItem("userObj");
   window.localStorage.removeItem("cartNum");
-  window.location.href = "../Electro-commerce/login/signin/login.html";
+  window.location.href = "/Electro-commerce/login/signin/login.html";
 }
 
 // third section
