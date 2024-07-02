@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Page</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+  </head>
+  <body>
+    <div id="header_section"></div>
+
+    <div class="spinner">
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+
+    <div class="container_products mb-5">
+      <h2 class="fashion_title text-center my-5"></h2>
+
+      <div class="search_div row"></div>
+
+      <div class="search_noProducts text-center">
+        <img
+          class="w-50"
+          src="https://firebasestorage.googleapis.com/v0/b/e-commerce-552db.appspot.com/o/images%2FNo%20data-rafiki.svg?alt=media&token=8b670779-ded2-4fde-bd67-1455257b567f"
+          alt=""
+        />
+      </div>
+
+      <div class="row product_row gy-4 gx-2">
+
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+        Account: "../account/account.html"
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        img: "../imgs/logo.jpg",
+        Home: "../index.html",
+        fashion: "../pages/fashion.html?data=fashionSection",
+        perfume: "../pages/perfume.html?data=perfumeSection",
+        Accessories: "../pages/Accessories.html?data=AccessioresSection",
+        Electronics: "../pages/Electronics.html?data=ElectronicsSection",
+        phones: "../pages/phones.html?data=PhonesSection",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+      });
+    </script>
+
+    <script type="module" src="search.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

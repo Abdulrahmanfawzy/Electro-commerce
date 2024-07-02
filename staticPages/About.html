@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    
+    <!-- styling of About page in main.css -->
+
+    <div id="header_section"></div>
+
+    <div class="about_bg">
+      <h2 class="about_title">About US</h2>
+    </div>
+
+    <div class="about_brands container_section">
+      <div class="row gx-3">
+        <div class="col-6 col-sm-3 col-lg-2">
+          <img class="w-100 d-block" src="../imgs/about/brand.png" alt="" />
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <img class="w-100 d-block" src="../imgs/about/brand-2.png" alt="" />
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <img class="w-100 d-block" src="../imgs/about/brand-3.png" alt="" />
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <img class="w-100 d-block" src="../imgs/about/brand-4.png" alt="" />
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <img class="w-100 d-block" src="../imgs/about/brand-5.png" alt="" />
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <img class="w-100 d-block" src="../imgs/about/brand-6.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container_section about_brands">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>
+            Mission to <br />
+            People & Planet
+          </h3>
+          <section>
+            A pioneer of innovation, Minios delivers the ultimate curation of
+            product and content through its websites, shopping apps and the
+            world of Minios, speaking to a monthly audience of over 6 million
+            via a global, multi-channel ecosystem and providing a seamless
+            shopping experience across mobile, tablet and desktop. Uxe,
+            lightweight, and made with the perfect blend of cashmere and cotton,
+            our Sonoma Pillows and Throws are inspired by the basics we turn to
+            season after season. Get to know the cozy essentials that will
+            elevate your space in an instant.
+          </section>
+        </div>
+        <div class="col-md-6 sec_img">
+          <img class="w-100 d-block" src="../imgs/about/img-16.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container_section about_brands">
+      <div class="row align-items-center">
+        <div class="col-md-6 sec_img">
+          <img class="w-100 d-block" src="../imgs/about/img-17.jpg" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h3>
+            Your Own
+            <br />
+            True Colors Trends
+          </h3>
+          <section>
+            A pioneer of innovation, Minios delivers the ultimate curation of
+            product and content through its websites, shopping apps and the
+            world of Minios, speaking to a monthly audience of over 6 million
+            via a global, multi-channel ecosystem and providing a seamless
+            shopping experience across mobile, tablet and desktop. Uxe,
+            lightweight, and made with the perfect blend of cashmere and cotton,
+            our Sonoma Pillows and Throws are inspired by the basics we turn to
+            season after season. Get to know the cozy essentials that will
+            elevate your space in an instant.
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <footer id="footer"></footer>
+
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        wishlist: "../wishlist/wishlist.html",
+        cart: "../cart/cart.html",
+        About: "About.html",
+        Faq: "FAQ.html",
+        contact: "contact.html",
+        Account: "../account/account.html"
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "About.html",
+        Faq: "FAQ.html",
+        contact: "contact.html",
+      });
+    </script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

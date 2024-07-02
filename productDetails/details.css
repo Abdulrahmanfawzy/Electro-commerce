@@ -1,0 +1,56 @@
+@font-face {
+    font-family: fashionpoppins;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+.productDetails{
+    font-size: 15px;
+    font-family: fashionpoppins;
+}
+.productDetails h4{
+    color: #484F56;
+    font-family: fashionpoppins;
+    font-size: 15px;
+}
+.productDetails h2{
+    font-family: fashionpoppins;
+    color: #484F56;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+.productDetails button{
+    outline: none;
+    border: 0;
+    background: transparent;
+    display: inline-block;
+}
+
+.productDetails img{
+    object-fit: contain;
+    width: 80%;
+}
+
+.details{
+    display: inline-block;
+}
+.col-md-6 h5{
+    margin-bottom: 0.9rem;
+}
+img{
+    border-radius: 5px;
+}
+.text_change_color{
+    color: rgb(117, 112, 106);
+    font-size: 15px!important;
+}
+
+.size {
+    margin-bottom: 0;
+}
+
+.colorSpan{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}

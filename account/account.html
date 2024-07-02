@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Page</title>
+    <style>
+      body {
+        color: #333e48;
+      }
+      #submit {
+        background: #333e48;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+      .inptValid {
+        color: rgb(174, 7, 7);
+        font-size: 13px;
+        margin-top: 5px;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+  </head>
+  <body>
+    <div id="header_section"></div>
+
+    <div class="spinner">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <form id="form" class="my-5 w-75 container_section">
+      <h2 class="profileImage text-center mb-4">Account details</h2>
+      <div class="row">
+        <div class="form-group mb-3">
+          <label for="inputFirstName" class="ms-2 mb-1">Username</label>
+          <input
+            type="text"
+            class="form-control rounded-5 ps-3 py-2"
+            id="inputUsername"
+          />
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label for="inputAddress" class="ms-2 mb-1">Email</label>
+        <input
+          disabled
+          type="email"
+          class="form-control rounded-5 ps-3 py-2"
+          id="inputAddress"
+        />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="oldPass" class="ms-2 mb-1"
+          >old password <span>*</span>(Required If you want to reset the
+          password)</label
+        >
+        <input
+          type="password"
+          class="form-control rounded-5 ps-3 py-2"
+          id="oldPass"
+        />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="inputNewPassConfirm" class="ms-2 mb-1"
+          >New password <span>*</span></label
+        >
+        <input
+          type="password"
+          class="form-control rounded-5 ps-3 py-2"
+          id="inputNewPassword"
+        />
+        <div class="inptValid"></div>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="inputAddress" class="ms-2 mb-1">Confirm new password</label>
+        <input
+          type="password"
+          class="form-control rounded-5 ps-3 py-2"
+          id="inputNewPassConfirm"
+        />
+      </div>
+
+      <button type="submit" id="submit" class="btn">Update Profile</button>
+    </form>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+        Account: "account.html",
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html?data=fashionSection",
+        perfume: "../pages/perfume.html?data=perfumeSection",
+        Accessories: "../pages/Accessories.html?data=AccessioresSection",
+        Electronics: "../pages/Electronics.html?data=ElectronicsSection",
+        phones: "../pages/phones.html?data=PhonesSection",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="account.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

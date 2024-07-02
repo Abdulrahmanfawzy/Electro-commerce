@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <div id="header_section"></div>
+
+    <div class="spinner">
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+
+    <div class="bg_cover mb-5">
+      <div
+        class="container_products d-flex justify-content-center align-items-center h-100"
+      >
+        <h2 class="fashion_title">Electronics Store</h2>
+      </div>
+    </div>
+
+    <div class="container_products mb-5">
+      <div class="search_div row"></div>
+
+      <div class="search_noProducts text-center">
+        <img
+          class="w-50"
+          src="https://firebasestorage.googleapis.com/v0/b/e-commerce-552db.appspot.com/o/images%2FNo%20data-rafiki.svg?alt=media&token=8b670779-ded2-4fde-bd67-1455257b567f"
+          alt=""
+        />
+      </div>
+      <div class="product_parent row gx-3">
+        <div class="product_filter col-lg-2 col-sm-4 col-md-3">
+          <h3 class="border-bottom pb-2 filter_title">Filters</h3>
+
+          <ul class="p-0 pb-2 border-bottom">
+            <h5 class="brand mb-1 mt-5 pb-2">Brands</h5>
+            <div class="form-check all_brand mb-1">
+              <input
+                class="form-check-input All product_check"
+                data-brand="All"
+                type="checkbox"
+                value=""
+                id="flexCheckDefaultd"
+              />
+              <label
+                class="form-check-label product_check"
+                data-brand="All"
+                for="flexCheckDefaultd"
+              >
+                All
+              </label>
+            </div>
+            <div class="brand_filter_div"></div>
+          </ul>
+
+          <ul class="p-0 pb-2 mt-1 border-bottom">
+            <h5 class="brand mb-1 pb-2">Colors</h5>
+            <div class="color_filter_div"></div>
+          </ul>
+
+          <div class="price_filter">
+            <h5 class="brand mb-1 pb-2">Price</h5>
+            <input type="range" value="0" id="inpt_price" />
+            <label class="priceLabel" for="inpt_price d-block"></label>
+            <div>
+              <button id="priceBtn">Filter</button>
+            </div>
+          </div>
+
+          <ul class="p-0 pb-0 mt-5 latest_products">
+            <h5 class="filter_title mb-1 pb-2 border-bottom">
+              Latest Products
+            </h5>
+            <div class="mt-4 products_latest_area"></div>
+          </ul>
+        </div>
+        <div class="col-sm-8 col-md-9 col-lg-10">
+          <div class="row product_row gy-4 gx-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "fashion.html",
+        perfume: "perfume.html",
+        Accessories: "Accessories.html",
+        Electronics: "Electronics.html",
+        phones: "phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+        Account: "../account/account.html"
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        img: "../imgs/logo.jpg",
+        Home: "../index.html",
+        fashion: "fashion.html?data=fashionSection",
+        perfume: "perfume.html?data=perfumeSection",
+        Accessories: "Accessories.html?data=AccessioresSection",
+        Electronics: "Electronics.html?data=ElectronicsSection",
+        phones: "phones.html?data=PhonesSection",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+      });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="module" src="pages.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    <link rel="stylesheet" href="details.css" />
+  </head>
+  <body>
+    <div id="header_section"></div>
+
+    <div class="spinner">
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+    
+    <div class="container productDetails mt-5"></div>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+        Account: "../account/account.html"
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html?data=fashionSection",
+        perfume: "../pages/perfume.html?data=perfumeSection",
+        Accessories: "../pages/Accessories.html?data=AccessioresSection",
+        Electronics: "../pages/Electronics.html?data=ElectronicsSection",
+        phones: "../pages/phones.html?data=PhonesSection",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "../staticPages/About.html",
+        Faq: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="details.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

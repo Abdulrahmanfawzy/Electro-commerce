@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- styling of cart page in main.css -->
+
+    <div id="header_section"></div>
+
+    <div class="spinner">
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+
+    <div class="wishlist_parent cart_parent container_section my-5">
+      <div class="table-responsive border border-bottom-0 wishlist_table">
+        <table class="table m-auto bg-white text-center rounded-3">
+          <thead>
+            <th class="py-3"></th>
+            <th class="py-3"></th>
+            <th class="py-3">Product Name</th>
+            <th class="py-3">Price</th>
+            <th class="py-3">Quantity</th>
+            <th class="py-3">Subtotal</th>
+          </thead>
+          <tbody id="cart_body"></tbody>
+        </table>
+      </div>
+      <div class="cartTotal mt-5">
+        
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "../staticPages/About.html",
+        FAQ: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+        Account: "../account/account.html"
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html?data=fashionSection",
+        perfume: "../pages/perfume.html?data=perfumeSection",
+        Accessories: "../pages/Accessories.html?data=AccessioresSection",
+        Electronics: "../pages/Electronics.html?data=ElectronicsSection",
+        phones: "../pages/phones.html?data=PhonesSection",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "../staticPages/About.html",
+        FAQ: "../staticPages/FAQ.html",
+        contact: "../staticPages/contact.html",
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../wishlist/wishlist.js"></script>
+    <script type="module" src="cart.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

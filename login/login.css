@@ -1,0 +1,14 @@
+.inptValid{
+    color: rgb(174, 7, 7);
+    font-size: 13px;
+    margin-top: 5px;
+}
+.alertDiv{
+    color: rgb(174, 7, 7);
+    font-size: 13px;
+    margin-top: 5px;
+}
+.alert{
+    font-size: 13px;
+    display: none;
+}

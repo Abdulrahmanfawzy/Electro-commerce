@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- styling of Contact page in main.css -->
+
+    <div id="header_section"></div>
+
+    <div class="map">
+      <iframe
+        class="w-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360977185!2d-74.30933341658171!3d40.69753995848721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2seg!4v1715707885151!5m2!1sen!2seg"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="container_section contact_section my-5">
+      <div class="row gx-5">
+        <div class="col-md-8">
+          <h4 class="border-bottom pb-3">Leave us a Message</h4>
+          <form id="form" class="mt-4">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputFirstName" class="ms-2"
+                  >First Name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-5 ps-3"
+                  id="inputFirstName"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLastName" class="ms-2"
+                  >Last Name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-5 ps-3"
+                  id="inputLastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress" class="ms-2"
+                >Email <span class="text-danger">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control rounded-5 ps-3"
+                id="inputAddress"
+                placeholder="Enter your email address"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="inputAddress" class="ms-2">
+                Comment or Message <span class="text-danger">*</span>
+              </label>
+              <textarea
+                id="messageText"
+                name="message"
+                class="form-control textarea rounded-4"
+              ></textarea>
+            </div>
+
+            <button type="submit" id="submit" class="btn btn-warning px-4 py-2">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="border-bottom pb-3 mb-4">Our Store</h4>
+          <li>17 Princess Road</li>
+          <li>London, Greater London</li>
+          <li>NW1 8JR, UK</li>
+          <h6 class="my-4">Hours of Operation</h6>
+          <li>Monday:12-6 PM</li>
+          <li>Tuesday:12-6 PM</li>
+          <li>Wednesday:12-6 PM</li>
+          <li>Thursday:12-6 PM</li>
+          <li>Friday:12-6 PM</li>
+          <li>Saturday:12-6 PM</li>
+          <li>Saturday:12-6 PM</li>
+
+          <h6 class="mt-4">Careers</h6>
+
+          <section class="mb-5">
+            If you’re interested in employment opportunities at Electro, please
+            email us:
+            <a href="mailto:abdulrahman2d77@gmail.com">admin@gmail.com</a>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "About.html",
+        Faq: "FAQ.html",
+        contact: "contact.html",
+        Account: "../account/account.html"
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html?data=fashionSection",
+        perfume: "../pages/perfume.html?data=perfumeSection",
+        Accessories: "../pages/Accessories.html?data=AccessioresSection",
+        Electronics: "../pages/Electronics.html?data=ElectronicsSection",
+        phones: "../pages/phones.html?data=PhonesSection",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "About.html",
+        Faq: "FAQ.html",
+        contact: "contact.html"
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="contact.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

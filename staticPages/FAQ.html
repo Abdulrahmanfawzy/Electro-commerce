@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    
+    <!-- styling of FAQ page in main.css -->
+
+    <div id="header_section"></div>
+
+    <div class="text-center FAQ_title my-5">
+        <h2>
+            Frequently Asked Questions
+        </h2>
+        <section>
+            This Agreement was last modified on 18th May 2024
+        </section>
+    </div>
+
+    <div class="shipping container_section">
+        <h2 class="border-bottom pb-3 mb-5">
+            Shipping Information
+        </h2>
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <h4 class="mb-3">
+                    What Shipping Methods Are Available?
+                </h4>
+                <section>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien lorem, consectetur et turpis id, blandit interdum metus. Morbi sed ligula id elit mollis efficitur ut nec ligula. Proin erat magna, pellentesque at elementum at, eleifend a tortor.
+                </section>
+            </div>
+            <div class="col-md-6 mb-5">
+                <h4 class="mb-3">
+                    How Do I Track My Order?
+                </h4>
+                <section>
+                    Integer ex turpis, venenatis vitae nibh vel, vestibulum maximus quam. Ut pretium orci ac vestibulum porttitor. Fusce tempus diam quis justo porttitor gravida.
+                </section>
+            </div>
+            <div class="col-md-6 mb-5">
+                <h4 class="mb-3">
+                    How Long Will it Take To Get My Package?
+                </h4>
+                <section>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien lorem, consectetur et turpis id, blandit interdum metus. Morbi sed ligula id elit mollis efficitur ut nec ligula. Proin erat magna, pellentesque at elementum at, eleifend a tortor.
+                </section>
+            </div>
+            <div class="col-md-6 mb-5">
+                <h4 class="mb-3"> 
+                    Do I Need A Account To Place Order?
+                </h4>
+                <section>
+                    Integer ex turpis, venenatis vitae nibh vel, vestibulum maximus quam. Ut pretium orci ac vestibulum porttitor. Fusce tempus diam quis justo porttitor gravida.
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer id="footer"></footer>
+
+
+    <script type="module">
+      import { headerFun } from "../header/header.js";
+      document.getElementById("header_section").innerHTML = headerFun({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html",
+        perfume: "../pages/perfume.html",
+        Accessories: "../pages/Accessories.html",
+        Electronics: "../pages/Electronics.html",
+        phones: "../pages/phones.html",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "About.html",
+        Faq: "FAQ.html",
+        contact: "contact.html",
+        Account: "../account/account.html"
+      });
+    </script>
+
+    <script type="module">
+      import { getFooter } from "../footer/footer.js";
+      document.getElementById("footer").innerHTML = getFooter({
+        Home: "../index.html",
+        fashion: "../pages/fashion.html?data=fashionSection",
+        perfume: "../pages/perfume.html?data=perfumeSection",
+        Accessories: "../pages/Accessories.html?data=AccessioresSection",
+        Electronics: "../pages/Electronics.html?data=ElectronicsSection",
+        phones: "../pages/phones.html?data=PhonesSection",
+        cart: "../cart/cart.html",
+        wishlist: "../wishlist/wishlist.html",
+        About: "About.html",
+        Faq: "FAQ.html",
+        contact: "contact.html"
+      });
+    </script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
