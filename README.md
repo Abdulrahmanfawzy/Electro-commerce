@@ -1,4 +1,4 @@
-Electro E-commerce store
+## Electro E-commerce store
 Live demo: https://abdulrahmanfawzy.github.io/Electro-commerce/
 
 Electro store is a huge store built using HTML, CSS, Javascript, Ajax, bootstrap5, sweet alert and Firebase
