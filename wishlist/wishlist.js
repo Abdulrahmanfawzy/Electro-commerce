@@ -89,8 +89,11 @@ document.addEventListener("click", async (e) => {
     addToCartFun(e, e.target.dataset.docname);
   }
 });
+  let wishNum = document.querySelector(".wishNum");
+
 
 async function getObjectFirebase(id) {
+  wishNum.innerHTML = +wishNum.innerHTML - 1;
   remove(ref(db, `users/${userId}/wishlist/` + id)).then(async (result) => {
     const Toast = Swal.mixin({
       toast: true,
