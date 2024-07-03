@@ -5,8 +5,8 @@
 <div>
   Admin dashboard: https://abdulrahmanfawzy.github.io/Electro-commerce/admin/adminLogin/admin.html
 </div>
-<span>admin username: <strong>abdulrahman_admin@gmail.com</strong></span>
-admin password: <strong>Abdo1234*</strong>
+<div>admin username: <strong>abdulrahman_admin@gmail.com</strong></div>
+<div>admin password: <strong>Abdo1234*</strong></div>
 
 Electro store is a huge store built using HTML, CSS, Javascript, Ajax, bootstrap5, sweet alert and Firebase
 
