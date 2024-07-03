@@ -2,12 +2,15 @@
 <div>
   Live demo: https://abdulrahmanfawzy.github.io/Electro-commerce/
 </div>
+<br/>
 <div>
   Admin dashboard: https://abdulrahmanfawzy.github.io/Electro-commerce/admin/adminLogin/admin.html
 </div>
+<br/>
 <div>admin username: <strong>abdulrahman_admin@gmail.com</strong></div>
+<br/>
 <div>admin password: <strong>Abdo1234*</strong></div>
-
+<br/>
 Electro store is a huge store built using HTML, CSS, Javascript, Ajax, bootstrap5, sweet alert and Firebase
 
 This store contains many features like:
